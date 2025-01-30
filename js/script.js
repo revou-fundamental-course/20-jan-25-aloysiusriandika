@@ -8,12 +8,12 @@ function validateForm() {
     let rumus = (weight / (height / 100) ** 2).toPrecision(3);
 
     if (rumus < maxUnder) {
-        resultElement.innerHTML = `<span>Your BMI is <b>${rumus}</b> which means You are <b>UnderWeight</b></span>`;
+        resultElement.innerHTML = `<span>Your BMI is <b>${rumus}</b> which means you are <b>UNDERWEIGHT</b>.</span>`;
     } else if (rumus >= maxUnder && rumus < maxNormal) {
-        resultElement.innerHTML = `<span>Your BMI is <b>${rumus}</b> which means You are <b>Normal</b></span>`;
+        resultElement.innerHTML = `<span>Your BMI is <b>${rumus}</b> which means you are <b>NORMAL</b>.</span>`;
     } else if (rumus >= maxNormal && rumus < maxOver) {
-        resultElement.innerHTML = `<span>Your BMI is <b>${rumus}</b> which means You are <b>OverWeight</b></span>`;
+        resultElement.innerHTML = `<span>Your BMI is <b>${rumus}</b> which means you are <b>OVERWEIGHT</b>.</span>`;
     } else if (rumus >= maxOver) {
-        resultElement.innerHTML = `<span>Your BMI is <b>${rumus}</b> which means You are <b>Obesity</b></span>`;
+        resultElement.innerHTML = `<span>Your BMI is <b>${rumus}</b> which means you are <b>OBESITY</b>.</span>`;
     }
 }

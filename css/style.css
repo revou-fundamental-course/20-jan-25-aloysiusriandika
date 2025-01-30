@@ -1,16 +1,17 @@
 body {
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
+    font-family:Georgia;
     display: flex;
     justify-content: center;
   }
   #bmi {
     max-width: 100%;
-    width: 450px;
+    width: 900px;
     position: relative;
-    height: 400px;
-    margin-top: 50px;
+    height: 500px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     flex-direction: column;
     align-items: center;
     padding:50px;
@@ -35,8 +36,17 @@ body {
     margin-bottom: 20px;
   }
 
-  .mb-50px {
-    margin-bottom: 50px;
+  .mb-50px p {
+    font-family: 'Microsoft Himalaya';
+    font-size: 30px;
+  }
+  .mb-50px span {
+    font-family:Arial;
+    font-size: 30px;
+    font-weight: bold;
+    color:#6558f5;
+    display: flex;
+    justify-content: center;
   }
 
   #bmi .wrapper .wrapper-input .wp-box {
@@ -75,4 +85,8 @@ body {
   .button1:hover {
     background-color: #2e1cce;
     color: white;
+  }
+
+  #result {
+    padding-top:10px;
   }
